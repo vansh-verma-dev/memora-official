@@ -1,0 +1,132 @@
+.album-section {
+  padding: 70px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+
+/* TOAST MESSAGE */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* GRID */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.album-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.album-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.img-box {
+  height: 220px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BODY */
+.card-body {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-body h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.card-body p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* ⭐ RATING ROW FIX */
+.rating-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.rating {
+  color: #ff9800;
+}
+
+.reviews {
+  color: #777;
+}
+
+/* BUTTON ROW */
+.btn-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* CHECKOUT (WIDE BUTTON) */
+.checkout-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* WISHLIST (ICON ONLY) */
+.wish-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.wish-btn.active {
+  background: #ffe6e6;
+  border-color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .album-section {
+    padding: 30px;
+  }
+}

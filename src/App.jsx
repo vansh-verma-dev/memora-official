@@ -1,4 +1,5 @@
 import AboutSection from "./components/About/about";
+import AlbumSelector from "./components/Books/product";
 import FAQSection from "./components/FAQ/faq";
 import Footer from "./components/Footer/Footer";
 import Hero, { TrustSection } from "./components/Hero/Hero";
@@ -15,6 +16,7 @@ function App() {
       <TrustSection />
       <Stepsection />
       <ReviewSection />
+      <AlbumSelector />
       {/* <BookShowcase /> */}
       <AboutSection />
       <FAQSection />
